@@ -3,7 +3,6 @@ const formSer = document.querySelector(".search");
 formSer.addEventListener("submit", (e) => {
   e.preventDefault();
   getData(formSer.term.value.trim());
-  // console.log(formSer.term.value);
 });
 window.addEventListener("DOMContentLoaded", () => getData());
 const getData = async (trm) => {
